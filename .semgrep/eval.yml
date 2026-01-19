@@ -3,9 +3,9 @@
     message: "Avoid using eval() — it can lead to code injection vulnerabilities." # what SAST will show when vulnerability is found
     severity: WARNING  # the vulnerability severity
     languages: [javascript] # what language this rule applies to (in this case, javascript)
-    pattern-either:
-    - eval($X) # Matches any eval(...) call, $X = whatever is inside the parentheses.
-    - eval ( $X )
+    pattern: eval($VAR) # Matches any eval(...) call
+
 
 
     # The pattern is the main thing that is being used to identify the vulnerabilities.d
+
