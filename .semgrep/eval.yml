@@ -1,13 +1,13 @@
  rules:
-  - id: no-eval # name of the rule being created
-    message: "Avoid using eval() — it can lead to code injection vulnerabilities." # what SAST will show when vulnerability is found
-    severity: WARNING  # the vulnerability severity
-    languages: [javascript] # what language this rule applies to (in this case, javascript)
-    pattern: eval($X) # Matches any eval() call
+  - id: no-eval 
+    message: "Avoid using eval() — it can lead to code injection vulnerabilities."
+    severity: WARNING
+    languages: [javascript]
+    pattern: eval($X)
 
 
 
-    # The pattern is the main thing that is being used to identify the vulnerabilities.d
+
 
 
 
