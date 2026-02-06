@@ -1,9 +1,10 @@
- rules:
+rules:
   - id: no-eval 
     message: "Avoid using eval() — it can lead to code injection vulnerabilities."
     severity: WARNING
     languages: [javascript]
     pattern: eval($X)
+
 
 
 
